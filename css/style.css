@@ -13,6 +13,137 @@
   bottom: 30px;
   z-index: 99;
 }
+/* Replace your current custom-toggler styles with these */
+.custom-toggler {
+  border: none;
+  background-color: #1c3f60; /* Bright blue circle color */
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  border-radius: 50%; /* Makes it a perfect circle */
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Horizontal lines (white color) */
+.toggler-icon {
+  position: relative;
+  width: 25px;
+  height: 2px;
+  background-color: #fff; /* White lines */
+  border-radius: 2px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Additional lines for hamburger */
+.toggler-icon::before,
+.toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #fff; /* White lines */
+  border-radius: 2px;
+  transition: all 0.4s ease-in-out;
+}
+
+.toggler-icon::before {
+  top: -6px;
+  left: 0;
+}
+
+.toggler-icon::after {
+  top: 6px;
+  left: 0;
+}
+
+/* Remove hover effect to match the example */
+.custom-toggler:hover {
+  background-color: #1c3f60; /* Keep the same color */
+  transform: none;
+}
+/* Fixed Social Media Icons */
+
+.social-media-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp {
+  background-color: #25d366;
+  color: white;
+  padding: 28px;
+}
+
+.instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  padding: 28px;
+}
+.social-icon i {
+  color: white !important; /* Force white color for the icon */
+  font-size: 32px; /* Adjust icon size as needed */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .social-media-fixed {
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .social-media-fixed {
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
 
 /*** Spinner ***/
 #spinner {
