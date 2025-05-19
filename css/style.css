@@ -314,7 +314,7 @@
 }
 
 .page-header {
-  background: url(../img/carousel-1.jpg) center center no-repeat;
+  background: url("https://www.adecco.com/en-us/-/media/project/adecco/adeccous/resources/benefits-for-workers-and-employers-who-return-to-work-header.jpg?h=800&iar=0&w=1920&hash=C26F834AF70384665C47049C19FEBFF8") center center no-repeat;
   background-size: cover;
 }
 
@@ -325,7 +325,7 @@
 
 .page-header .breadcrumb-item a,
 .page-header .breadcrumb-item + .breadcrumb-item::before {
-  color: #696e77;
+  color: #fff;
 }
 
 .page-header .breadcrumb-item a:hover,
@@ -429,6 +429,13 @@
 }
 
 /*** Team ***/
+.firstimage img {
+  width :100%;
+  height: 300px; /* adjust this value to your desired height */
+  object-fit:cover;
+  object-position:  top ;
+  
+ }
 .team-item {
   position: relative;
   overflow: hidden;
