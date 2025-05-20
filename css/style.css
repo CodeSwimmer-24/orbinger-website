@@ -17,15 +17,15 @@
 .custom-toggler {
   border: none;
   background-color: #1c3f60; /* Bright blue circle color */
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
   border-radius: 50%; /* Makes it a perfect circle */
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,7 +42,7 @@
 /* Additional lines for hamburger */
 .toggler-icon::before,
 .toggler-icon::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 2px;
@@ -103,19 +103,22 @@
 }
 
 .instagram {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
+  background: linear-gradient(
+    to bottom,
+
+    #285aeb 50%,
+    #285aeb 100%
   );
   padding: 28px;
 }
+
 .social-icon i {
   color: white !important; /* Force white color for the icon */
-  font-size: 32px; /* Adjust icon size as needed */
+  font-size: 30px; /* Adjust icon size as needed */
+}
+.instagram-icon i {
+  color: white !important; /* Force white color for the icon */
+  font-size: 20px; /* Adjust icon size as needed */
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -143,7 +146,6 @@
     left: 10px;
   }
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -314,7 +316,8 @@
 }
 
 .page-header {
-  background: url("https://www.adecco.com/en-us/-/media/project/adecco/adeccous/resources/benefits-for-workers-and-employers-who-return-to-work-header.jpg?h=800&iar=0&w=1920&hash=C26F834AF70384665C47049C19FEBFF8") center center no-repeat;
+  background: url("https://www.adecco.com/en-us/-/media/project/adecco/adeccous/resources/benefits-for-workers-and-employers-who-return-to-work-header.jpg?h=800&iar=0&w=1920&hash=C26F834AF70384665C47049C19FEBFF8")
+    center center no-repeat;
   background-size: cover;
 }
 
@@ -430,12 +433,11 @@
 
 /*** Team ***/
 .firstimage img {
-  width :100%;
+  width: 100%;
   height: 300px; /* adjust this value to your desired height */
-  object-fit:cover;
-  object-position:  top ;
-  
- }
+  object-fit: cover;
+  object-position: top;
+}
 .team-item {
   position: relative;
   overflow: hidden;
